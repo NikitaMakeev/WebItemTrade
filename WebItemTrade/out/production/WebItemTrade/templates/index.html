@@ -1,26 +1,197 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--	<meta charset="ISO-8859-1">-->
+<!--	<title>Welcome to CodeJava Home</title>-->
+<!--	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />-->
+<!--	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>-->
+<!--	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>-->
+<!--	<style>-->
+<!--		.header-buttons {-->
+<!--            text-align: right;-->
+<!--        }-->
+<!--	</style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--		<div class="col header-buttons">-->
+<!--			<a th:href="@{/register}" class="btn btn-link">Sign up</a>-->
+<!--			<a th:href="@{/login2}" class="btn btn-primary">Log in</a>-->
+<!--		</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="ISO-8859-1">
-	<title>Welcome to CodeJava Home</title>
-	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
-	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<style>
-		.header-buttons {
-            text-align: right;
+		header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #9d6363;
+        }
+
+        .container {
+            width: 1440px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(75, 75, 75, 0.1);
+            background-color: #333;
+        }
+
+        .logo {
+            font-size: 70px;
+            color: #fff;
+        }
+
+        .buttons {
+            display: flex;
+        }
+        .sign-in p {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #fffdfd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+            font-size: 25px;
+
+        }
+        .sign-up p {
+            display: inline-block;
+            font-size: 25px;
+            padding: 10px 15px;
+            border: 3px solid #ff0000;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fffdfd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+        }
+        .sign-up p:hover {
+            background-color: #525252;
+        }
+        .sign-in p:hover {
+            background-color: #525252;
+        }
+
+
+
+        .best-text {
+            border: 5px solid red;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 0 auto;
+            font-size: 70px;
+        }
+
+        .custom-content {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .full-text{
+            font-size: 1.7em;
+            line-height: 1.6;
+        }
+
+
+
+        .black {
+            color: black;
+        }
+
+        .white {
+            color: white;
+            background-color: black;
+        }
+
+        .red {
+            color: red;
+        }
+
 	</style>
 </head>
 <body>
-<header class="container">
-	<div class="row">
-		<div class="col"></div>
-		<div class="col header-buttons">
-			<a th:href="@{/register}" class="btn btn-link">Sign up</a>
-			<a th:href="@{/login2}" class="btn btn-primary">Log in</a>
+
+<div>
+
+	<header>
+		<div class="container">
+			<div class="logo">WebItem</div>
+			<div class="buttons">
+				<a th:href="@{/register}" class="sign-up"><p>Sign up</p></a>
+				<a th:href="@{/login2}" class="sign-in"><p>Log in</p></a>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="container">
+
+		<div class="custom-content">
+			<div class="best-text">
+				О нашем сайте
+			</div>
+			<div class="custom-content">
+				<p class="full-text">
+					Добро пожаловать на наш сайт, где обмен становится простым и удобным! Мы предлагаем уникальную платформу для обмена предметами между пользователями без лишних хлопот и затрат. Наши возможности позволяют вам найти нужный вам предмет, который больше не нужен его владельцу, и предложить что-то, что может заинтересовать других участников. Мы создаем среду, где обмен становится веселым и взаимовыгодным процессом. Присоединяйтесь к нашему сообществу и начинайте обмениваться сегодня!
+				</p>
+			</div>
+
 		</div>
 	</div>
-</header>
+
+	<div class="container">
+
+		<div class="custom-content">
+			<div class="best-text">
+				<p>Как начать</p>
+			</div>
+			<div class="custom-content">
+				<ul>
+					<li class="black">
+						<p>Изучение платформы и правил:</p>
+					</li>
+					<li class="white">
+						<p>Регистрация аккаунта:</p>
+					</li>
+					<li class="red">
+						<p>Пополнение счета или баланса:</p>
+					</li>
+					<li class="black">
+						<p>Торговля и обмен:</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+</div>
 </body>
 </html>
+
