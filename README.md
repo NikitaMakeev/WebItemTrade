@@ -19,7 +19,7 @@
 - Изучение и обучение Spring Boot
 - Оригинальность и уникальность контента
 ## Модель базы данных
-![image]![thumbnail_image](https://github.com/NikitaMakeev/WebItemTrade/assets/131643784/3df41730-604b-4042-ace8-d2ecd7e4d5a3)
+![thumbnail_image](https://github.com/NikitaMakeev/WebItemTrade/assets/131643784/3df41730-604b-4042-ace8-d2ecd7e4d5a3)
 
 ## Используемые технологии
 - Sql
